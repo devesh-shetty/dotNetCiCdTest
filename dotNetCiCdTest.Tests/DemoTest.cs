@@ -12,5 +12,14 @@ namespace dotNetCiCdTest.Tests
             string expected = "Hello";
             Assert.Equal(expected, actual);
         }
+
+		[Fact]
+		public void TestWrongMessage()
+		{
+			string actual = Demo.SendMessage();
+			string expected = "Hello1";
+			Assert.Equal(expected, actual);
+		}
+
     }
 }
