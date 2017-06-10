@@ -17,7 +17,7 @@ namespace dotNetCiCdTest.Tests
         public void TestWrongMessage()
         {
             string actual = Demo.SendMessage();
-            string expected = "Hello1";
+            string expected = "Hello";
             Assert.NotEqual(expected, actual);
         }
 
