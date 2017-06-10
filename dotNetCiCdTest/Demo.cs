@@ -8,5 +8,11 @@ namespace dotNetCiCdTest
         {
             return "Hello";
         }
+
+        public static string NewMethod()
+        {
+            return "new";
+        }
+
     }
 }

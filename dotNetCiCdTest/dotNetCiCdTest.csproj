@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <PackageId>AppLogger.dotNetCiCdTest</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <Authors>Devesh Shetty</Authors>
     <Description>Awesome application returning Hello</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -10,4 +10,5 @@
     <Copyright>Copyright 2017 (c) Devesh Corporation. All rights reserved.</Copyright>
     <PackageTags>random test</PackageTags>
   </PropertyGroup>
+
 </Project>
