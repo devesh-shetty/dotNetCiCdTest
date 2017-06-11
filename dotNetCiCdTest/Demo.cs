@@ -19,5 +19,10 @@ namespace dotNetCiCdTest
             return "thunder";
         }
 
+		public static int SendInteger()
+		{
+			return 1;
+		}
+
     }
 }
