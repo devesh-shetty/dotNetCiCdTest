@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 
 namespace dotNetCiCdTest
 {
@@ -22,6 +22,11 @@ namespace dotNetCiCdTest
 		public static int SendInteger()
 		{
 			return 1;
+		}
+
+        public static float SendFloat()
+		{
+            return 1.2f;
 		}
 
     }
