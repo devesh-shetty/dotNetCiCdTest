@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <PackageId>AppLogger.dotNetCiCdTest</PackageId>
-    <PackageVersion>2.2.4</PackageVersion>
+    <PackageVersion>2.2.5</PackageVersion>
     <Authors>Devesh Shetty</Authors>
     <Description>Awesome application returning Hello</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
