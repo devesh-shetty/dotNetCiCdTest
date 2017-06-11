@@ -14,5 +14,10 @@ namespace dotNetCiCdTest
             return "new";
         }
 
+        public static string SendThunder()
+        {
+            return "thunder";
+        }
+
     }
 }
