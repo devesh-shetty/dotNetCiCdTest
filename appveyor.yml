@@ -1,4 +1,4 @@
-version: 1.0.{build}
+version: appveyor_repo_tag_name
 image: Visual Studio 2017
 nuget:
   disable_publish_on_pr: true
@@ -8,7 +8,7 @@ build:
   project: dotNetCiCdTest.sln
   verbosity: minimal
 test_script:
-- ps: >-
+- cmd: >-
     dotnet test dotNetCiCdTest.Tests/dotNetCiCdTest.Tests.csproj
 
     dotnet pack dotNetCiCdTest/dotNetCiCdTest.csproj --configuration Release
