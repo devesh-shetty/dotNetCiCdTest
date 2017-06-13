@@ -1,12 +1,15 @@
-version: 0.1.10
 image: Visual Studio 2017
 init:
-- ps: >-
-    $version = $env:appveyor_build_version
-
-    $tag = $env:appveyor_repo_tag_name
-
-    Update-AppveyorBuild -Version "$version-$tag"
+  # Set "build version number" to "short-commit-hash" or when tagged to "tag name" (Travis style)
+  - ps: >-
+      if ($env:APPVEYOR_REPO_TAG -eq "true")
+      {
+        Update-AppveyorBuild -Version "$env:APPVEYOR_REPO_TAG_NAME"
+      }
+      else
+      {
+        Update-AppveyorBuild -Version "dev-$($env:APPVEYOR_REPO_COMMIT.substring(0,7))"
+      }
 nuget:
   disable_publish_on_pr: true
 before_build:
