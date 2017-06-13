@@ -1,4 +1,12 @@
+version: 0.1.10
 image: Visual Studio 2017
+init:
+- ps: >-
+    $version = $env:appveyor_build_version
+
+    $tag = $env:appveyor_repo_tag_name
+
+    Update-AppveyorBuild -Version "$version-$tag"
 nuget:
   disable_publish_on_pr: true
 before_build:
