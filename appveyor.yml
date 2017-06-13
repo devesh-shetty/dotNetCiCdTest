@@ -1,4 +1,4 @@
-version: appveyor_repo_tag_name
+version: $(appveyor_repo_tag_name)
 image: Visual Studio 2017
 nuget:
   disable_publish_on_pr: true
